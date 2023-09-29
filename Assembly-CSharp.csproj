@@ -45,6 +45,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.8f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Source\Core\Bootstrapper.cs" />
      <Compile Include="Assets\_Source\AudioSystem\Music.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\_Support\TextMesh Pro\Shaders" />
@@ -65,6 +66,7 @@
      <Folder Include="Assets\_Support\TextMesh Pro" />
      <Folder Include="Assets\_Presentation\Scenes" />
      <Folder Include="Assets\_Support" />
+     <Folder Include="Assets\_Source\Core" />
      <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
      <Folder Include="Assets\_Support\TextMesh Pro\Resources" />
      <None Include="Assets\_Support\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
