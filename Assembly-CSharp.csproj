@@ -46,45 +46,45 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\_Source\Core\Bootstrapper.cs" />
-     <Compile Include="Assets\_Source\AudioSystem\Music.cs" />
+     <Compile Include="Assets\_Source\AudioSystem\Audio.cs" />
      <Folder Include="Assets" />
-     <Folder Include="Assets\_Support\TextMesh Pro\Shaders" />
-     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-     <None Include="Assets\_Support\TextMesh Pro\Sprites\EmojiOne.json" />
-     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-     <Folder Include="Assets\_Source" />
-     <Folder Include="Assets\_Support\TextMesh Pro\Resources\Style Sheets" />
-     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-     <Folder Include="Assets\_Source\AudioSystem" />
-     <None Include="Assets\_Support\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <Folder Include="Assets\_Support\TextMesh Pro\Fonts" />
-     <Folder Include="Assets\_Support\TextMesh Pro\Resources\Sprite Assets" />
-     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-     <None Include="Assets\_Support\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF.shader" />
-     <Folder Include="Assets\_Support\TextMesh Pro\Resources\Fonts &amp; Materials" />
-     <Folder Include="Assets\_Support\TextMesh Pro" />
-     <Folder Include="Assets\_Presentation\Scenes" />
-     <Folder Include="Assets\_Support" />
-     <Folder Include="Assets\_Source\Core" />
-     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-     <Folder Include="Assets\_Support\TextMesh Pro\Resources" />
-     <None Include="Assets\_Support\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-     <Folder Include="Assets\_Support\TextMesh Pro\Sprites" />
-     <None Include="Assets\_Support\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\_Support\TextMesh Pro\Shaders\TMPro.cginc" />
+     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+     <Folder Include="Assets\_Support\TextMesh Pro\Sprites" />
+     <Folder Include="Assets\_Support\TextMesh Pro\Resources\Sprite Assets" />
      <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_Sprite.shader" />
-     <Folder Include="Assets\_Support\TextMesh Pro\Documentation" />
-     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-     <Folder Include="Assets\_Presentation" />
-     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <Folder Include="Assets\_Support\TextMesh Pro\Resources\Fonts &amp; Materials" />
+     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+     <Folder Include="Assets\_Presentation\Scenes" />
      <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <Folder Include="Assets\_Support\TextMesh Pro\Resources" />
+     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+     <Folder Include="Assets\_Source" />
+     <Folder Include="Assets\_Support\TextMesh Pro" />
+     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+     <None Include="Assets\_Support\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF.shader" />
+     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+     <None Include="Assets\_Support\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+     <Folder Include="Assets\_Support\TextMesh Pro\Shaders" />
+     <Folder Include="Assets\_Support\TextMesh Pro\Resources\Style Sheets" />
+     <Folder Include="Assets\_Support\TextMesh Pro\Fonts" />
+     <None Include="Assets\_Support\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <Folder Include="Assets\_Presentation" />
+     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+     <None Include="Assets\_Support\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+     <Folder Include="Assets\_Support\TextMesh Pro\Documentation" />
+     <Folder Include="Assets\_Support" />
+     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+     <Folder Include="Assets\_Source\AudioSystem" />
+     <Folder Include="Assets\_Source\Core" />
+     <None Include="Assets\_Support\TextMesh Pro\Sprites\EmojiOne.json" />
+     <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_Sprite.shader" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.8f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -333,6 +333,12 @@
      </Reference>
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.8f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Collections.LowLevel.ILSupport">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\PackageCache\com.unity.collections@1.2.4\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\PackageCache\com.unity.visualscripting@1.9.0\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.8f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
@@ -700,8 +706,137 @@
      <Reference Include="System.Xml.Serialization">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2022.3.8f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.2D.IK.Runtime">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.IK.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="PsdPlugin">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.Burst.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.PlasticSCM.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Common.Path.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.Common.Path.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Timeline.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Shared.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualStudio.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.UI">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Core">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Animation.Runtime">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.Animation.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Tilemap.Extras">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Core.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+     </Reference>
      <Reference Include="Unity.Rider.Editor">
      <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.PixelPerfect.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.PixelPerfect.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Aseprite.Common">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.Aseprite.Common.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Sprite.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.InternalAPIEditorBridge.005">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.005.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Flow">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.Flow.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.InternalAPIEngineBridge.001">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Mathematics.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Common.Runtime">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEngine.UI">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Tilemap.Extras.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.Tilemap.Extras.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Timeline">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Collections">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.Collections.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Psdimporter.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.Psdimporter.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.InternalAPIEditorBridge.001">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.InternalAPIEditorBridge.001.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.SpriteShape.Runtime">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.SpriteShape.Runtime.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.State.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.PixelPerfect">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.PixelPerfect.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Mathematics">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.Mathematics.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Common.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TextMeshPro">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.TextMeshPro.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Aseprite.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.Aseprite.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.VisualScripting.State">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.SpriteShape.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Tilemap.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.Tilemap.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.Animation.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.Animation.Editor.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.2D.IK.Editor">
+     <HintPath>C:\Projects\GitHub\Ludum54\Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>

@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 
 namespace AudioSystem
 {
-    public class Music : MonoBehaviour
+    public class Audio : MonoBehaviour
     {
         [SerializeField] private AudioClip[] _scenesMusic;
         [SerializeField] private AudioSource _music;
@@ -12,8 +12,7 @@ namespace AudioSystem
 
         public static Action OnSoundVolumeChange;
         
-        
-        public static Music Instance { get; private set; }
+        public static Audio Instance { get; private set; }
 
         private void Awake()
         {
