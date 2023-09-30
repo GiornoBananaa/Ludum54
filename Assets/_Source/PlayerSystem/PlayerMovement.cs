@@ -40,12 +40,13 @@ namespace PlayerSystem
         {
             if (_isMoving || node.IsInfected) return;
             ActivateNodes(false);
+            _destination.IsBlocked = true;
             _currentNode = _destination;
             _isMoving = true;
             _timeElapsed = 0;
             _destination = node;
             ActivateNodes(true);
-
+            
         }
 
         private void ActivateNodes(bool active)
