@@ -1,4 +1,5 @@
 using InputSystem;
+using PathSystem;
 using PlayerSystem;
 using UnityEngine;
 
@@ -6,6 +7,9 @@ namespace Core
 {
     public class Bootstrapper : MonoBehaviour
     {
+        [SerializeField] private float lineWidth;
+        [SerializeField] private int lineLayerOrder;
+        [SerializeField] private Material lineMaterial;
         [SerializeField] private InputListener inputListener;
         [SerializeField] private Player player;
         
@@ -19,7 +23,8 @@ namespace Core
 
         private void Init()
         {
-            _playerMovement = new PlayerMovement(player.transform, player.MoveSpeed ,player.spawnNode);
+            PathNode.Links = new PathLinkDictionary(lineWidth,lineLayerOrder,lineMaterial);
+            _playerMovement = new PlayerMovement(player.transform, player.MoveSpeed ,player.spawnNode,player.blockedSteps);
             _playerInvoker = new PlayerInvoker(_playerMovement);
             player.Construct(_playerInvoker);
             inputListener.Construct(_playerInvoker);

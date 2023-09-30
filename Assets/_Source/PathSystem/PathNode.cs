@@ -7,6 +7,8 @@ namespace PathSystem
 {
     public class PathNode : MonoBehaviour
     {
+        public static PathLinkDictionary Links;
+        
         [field: SerializeField] public PathNode[] NearNodes { get; private set; }
         [SerializeField] private SpriteRenderer spriteRenderer;
         [SerializeField] private Sprite activatedSprite;
@@ -34,6 +36,7 @@ namespace PathSystem
             {
                 spriteRenderer.sprite = value ? blockedSprite : deafultSprite;
                 _isBlocked = value;
+                if (_isActivated) _isActivated = true;
             }
         }
 
@@ -43,17 +46,24 @@ namespace PathSystem
             set
             {
                 spriteRenderer.sprite = value ? infectedSprite : deafultSprite;
-                _isBlocked = value;
+                _isInfected = value;
+                if (_isActivated) _isActivated = true;
             }
         }
         private bool _isActivated;
         private bool _isBlocked;
         private bool _isInfected;
         
-        private void Awake()
+        private void Start()
         {
             IsInfected = false;
             _isBlocked = false;
+            for (int i = 0; i < NearNodes.Length; i++)
+            {
+                Links.Add(this,NearNodes[i]);
+            }
+            
+            spriteRenderer.sprite = IsActivated ? activatedSprite : deafultSprite;
         }
 
         private void OnMouseEnter()

@@ -8,8 +8,9 @@ namespace PlayerSystem
     public class Player : MonoBehaviour
     {
         [field: SerializeField] public float MoveSpeed { get; private set; }
-        [SerializeField] public PathNode spawnNode;
-
+        public int blockedSteps;
+        public PathNode spawnNode;
+        
         private PlayerInvoker _playerInvoker;
         
         private void Awake()
