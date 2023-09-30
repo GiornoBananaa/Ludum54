@@ -16,7 +16,7 @@ namespace PlayerSystem
         {
             transform.position = spawnNode.transform.position;
         }
-
+    
         public void Construct(PlayerInvoker playerInvoker)
         {
             _playerInvoker = playerInvoker;

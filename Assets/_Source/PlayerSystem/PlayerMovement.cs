@@ -20,6 +20,7 @@ namespace PlayerSystem
             _currentNode = currentNode;
             _destination = currentNode;
             _isMoving = false;
+            ActivateNodes(true);
         }
         
         public void Move()
@@ -38,13 +39,21 @@ namespace PlayerSystem
         public void SetNewPosition(PathNode node)
         {
             if (_isMoving || node.IsInfected) return;
-            bool isConnected = _destination.NearNodes.Any(nearNode => node == nearNode);
-            if(!isConnected) return;
-            
+            ActivateNodes(false);
             _currentNode = _destination;
             _isMoving = true;
-            _destination = node;
             _timeElapsed = 0;
+            _destination = node;
+            ActivateNodes(true);
+
+        }
+
+        private void ActivateNodes(bool active)
+        {
+            foreach (var node in _destination.NearNodes)
+            {
+                node.IsActivated = active;
+            }
         }
     }
 }
