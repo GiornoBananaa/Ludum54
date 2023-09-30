@@ -46,6 +46,11 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\_Source\Core\Bootstrapper.cs" />
+     <Compile Include="Assets\_Source\PlayerSystem\PlayerMovement.cs" />
+     <Compile Include="Assets\_Source\PlayerSystem\Player.cs" />
+     <Compile Include="Assets\_Source\InputSystem\InputListener.cs" />
+     <Compile Include="Assets\_Source\PlayerSystem\PlayerInvoker.cs" />
+     <Compile Include="Assets\_Source\PathSystem\PathNode.cs" />
      <Compile Include="Assets\_Source\AudioSystem\Audio.cs" />
      <Folder Include="Assets" />
      <None Include="Assets\_Support\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -56,6 +61,7 @@
      <Folder Include="Assets\_Support\TextMesh Pro\Resources\Fonts &amp; Materials" />
      <None Include="Assets\_Support\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <Folder Include="Assets\_Presentation\Scenes" />
+     <Folder Include="Assets\_Source\PathSystem" />
      <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <Folder Include="Assets\_Support\TextMesh Pro\Resources" />
      <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
@@ -64,6 +70,7 @@
      <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\_Support\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+     <Folder Include="Assets\_Source\InputSystem" />
      <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF.shader" />
      <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
      <None Include="Assets\_Support\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
@@ -74,6 +81,7 @@
      <Folder Include="Assets\_Support\TextMesh Pro\Fonts" />
      <None Include="Assets\_Support\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+     <Folder Include="Assets\_Source\PlayerSystem" />
      <Folder Include="Assets\_Presentation" />
      <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\_Support\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
