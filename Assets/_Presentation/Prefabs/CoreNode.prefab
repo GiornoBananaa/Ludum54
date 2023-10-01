@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6599016096866735935}
   - component: {fileID: 3002912048355769883}
+  - component: {fileID: 5554186223626639116}
+  - component: {fileID: 7312309125906612639}
   - component: {fileID: 8449237286182695795}
   - component: {fileID: 8315149467582463155}
-  - component: {fileID: 7312309125906612639}
-  - component: {fileID: 5554186223626639116}
   m_Layer: 0
   m_Name: CoreNode
   m_TagString: Untagged
@@ -58,6 +58,35 @@ MonoBehaviour:
   infectedSprite: {fileID: 0}
   deafultSprite: {fileID: 21300000, guid: d514804ca675b6a4ea805509ce4e2dd7, type: 3}
   isUnchangeable: 1
+--- !u!114 &5554186223626639116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4357443590405636948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc9117deb8b380644acf73472af26868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  energyExchangeRate: 1
+  infectedPaths: []
+--- !u!114 &7312309125906612639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4357443590405636948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8787e05cddd624342b73bfd45d63cf4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxEnergy: 100
+  energyConsumption: 1
+  energyBar: {fileID: 0}
 --- !u!212 &8449237286182695795
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -145,31 +174,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &7312309125906612639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4357443590405636948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8787e05cddd624342b73bfd45d63cf4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxEnergy: 100
-  energyConsumption: 1
-  energyBar: {fileID: 0}
---- !u!114 &5554186223626639116
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4357443590405636948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc9117deb8b380644acf73472af26868, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  energyExchangeRate: 1
