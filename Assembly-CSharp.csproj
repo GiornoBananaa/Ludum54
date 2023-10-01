@@ -61,6 +61,7 @@
     <Compile Include="Assets\_Source\ItemsSystem\EnergySpawner.cs" />
     <Compile Include="Assets\_Source\Core\Bootstrapper.cs" />
     <Compile Include="Assets\_Source\ItemsSystem\Energy.cs" />
+    <Compile Include="Assets\_Source\PathSystem\InfectedPath.cs" />
     <Compile Include="Assets\_Source\PlayerSystem\PlayerMovement.cs" />
     <Compile Include="Assets\_Source\ItemsSystem\KeySpawner.cs" />
     <Compile Include="Assets\_Source\PlayerSystem\Player.cs" />
@@ -68,6 +69,7 @@
     <Compile Include="Assets\_Source\InputSystem\InputListener.cs" />
     <Compile Include="Assets\_Source\PathSystem\PathLinkDictionary.cs" />
     <Compile Include="Assets\_Source\PlayerSystem\PlayerInvoker.cs" />
+    <Compile Include="Assets\_Source\ItemsSystem\ItemBeacon.cs" />
     <Compile Include="Assets\_Source\ItemsSystem\Key.cs" />
     <Compile Include="Assets\_Source\PathSystem\PathNode.cs" />
     <Compile Include="Assets\_Source\HUD\Bar.cs" />
