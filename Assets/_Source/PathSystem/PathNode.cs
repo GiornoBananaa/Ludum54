@@ -86,5 +86,15 @@ namespace PathSystem
             if(IsActivated)
                 spriteRenderer.sprite = activatedSprite;
         }
+
+        [ExecuteInEditMode]
+
+        private void OnDrawGizmos()
+        {
+            for (int i = 0; i < NearNodes.Length; i++)
+            {
+                Gizmos.DrawLine(transform.position, NearNodes[i].gameObject.transform.position);
+            }
+        }
     }
 }
