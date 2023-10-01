@@ -8,7 +8,6 @@ namespace PathSystem
     public class InfectedPath : MonoBehaviour
     {
         [SerializeField] private PathNode[] infectedNode;
-        [SerializeField] private Key key;
         [SerializeField] private Material infectedMaterial;
         [SerializeField] private Material deafultMaterial;
 
@@ -17,17 +16,7 @@ namespace PathSystem
         private void Start()
         {
             lines = new List<LineRenderer>();
-            //key.OnPickUp += OpenPath
             Invoke("BlockPath",0.4f);
-        }
-
-        private void Update()
-        {
-            if (key == null)
-            {
-                OpenPath(); 
-                gameObject.SetActive(false);
-            }
         }
 
         private void BlockPath()
@@ -47,7 +36,7 @@ namespace PathSystem
             }
         }
         
-        private void OpenPath()
+        public void OpenPath()
         {
             foreach (LineRenderer line in lines)
             {

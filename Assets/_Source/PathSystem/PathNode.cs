@@ -15,6 +15,7 @@ namespace PathSystem
         [SerializeField] private Sprite blockedSprite;
         [SerializeField] private Sprite infectedSprite;
         [SerializeField] private Sprite deafultSprite;
+        [SerializeField] private bool isUnchangeable;
         
         public Vector3 Point => transform.position;
         
@@ -34,6 +35,7 @@ namespace PathSystem
             get => _isBlocked;
             set
             {
+                if(isUnchangeable) return;
                 spriteRenderer.sprite = value ? blockedSprite : deafultSprite;
                 _isBlocked = value;
                 if (_isActivated) _isActivated = true;
@@ -45,6 +47,7 @@ namespace PathSystem
             get => _isInfected;
             set
             {
+                if(isUnchangeable) return;
                 spriteRenderer.sprite = value ? infectedSprite : deafultSprite;
                 _isInfected = value;
                 if (_isActivated) _isActivated = true;
