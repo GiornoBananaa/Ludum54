@@ -50,20 +50,18 @@ namespace PathSystem
                 if (_isActivated) _isActivated = true;
             }
         }
-        private bool _isActivated;
-        private bool _isBlocked;
-        private bool _isInfected;
-        
+        private bool _isActivated = false;
+        private bool _isBlocked = false;
+        private bool _isInfected = false;
+
         private void Start()
         {
-            IsInfected = false;
-            _isBlocked = false;
             for (int i = 0; i < NearNodes.Length; i++)
             {
                 Links.Add(this,NearNodes[i]);
             }
-            
-            spriteRenderer.sprite = IsActivated ? activatedSprite : deafultSprite;
+            if(IsActivated)
+                spriteRenderer.sprite =  activatedSprite;
         }
 
         private void OnMouseEnter()

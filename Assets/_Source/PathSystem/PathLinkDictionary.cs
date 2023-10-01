@@ -53,12 +53,11 @@ namespace PathSystem
             foreach (var p in _dict)
             {
                 PathNode[] nodes = p.Nodes;
-
-                if (nodes[0] == t1 && nodes[1] == t2
-                    || nodes[0] == t2 && nodes[1] == t1)
+                if ((nodes[0] == t1 && nodes[1] == t2)
+                    || (nodes[0] == t2 && nodes[1] == t1))
                     return true;
             }
-
+            
             return false;
         }
         
