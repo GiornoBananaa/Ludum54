@@ -24,6 +24,7 @@ namespace ItemsSystem
                 infectedPaths[infectedPaths.Count-1].OpenPath();
                 infectedPaths.RemoveAt(infectedPaths.Count - 1);
             }
+            inventory.Clear();
         }
         private void OnTriggerEnter2D(Collider2D collision)
         {
