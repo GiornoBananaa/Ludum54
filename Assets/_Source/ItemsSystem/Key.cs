@@ -2,9 +2,9 @@ namespace ItemsSystem
 {
     public class Key : Item
     {
-        protected override void PickUp()
+        protected override bool PickUp(Inventory targetInventory)
         {
-            Inventory.AddKey();
+            return targetInventory.AddKey();
         }
     }
 }

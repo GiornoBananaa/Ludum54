@@ -1,10 +1,14 @@
+using System;
+using UnityEngine;
+
 namespace ItemsSystem
 {
     public class Energy : Item
     {
-        protected override void PickUp()
+        protected override bool PickUp(Inventory targetInventory)
         {
-            Inventory.AddEnergy();
+
+            return targetInventory.AddEnergy();
         }
     }
 }
