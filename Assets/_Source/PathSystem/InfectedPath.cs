@@ -7,7 +7,6 @@ namespace PathSystem
 {
     public class InfectedPath : MonoBehaviour
     {
-        [SerializeField] private int maxKeys;
         [SerializeField] private PathNode[] infectedNode;
         [SerializeField] private KeySpawner keySpawner;
         [SerializeField] private Material infectedMaterial;
@@ -38,7 +37,7 @@ namespace PathSystem
                 }
             }
         }
-
+        
         public void OpenPath()
         {
             foreach (LineRenderer line in lines)
@@ -48,7 +47,7 @@ namespace PathSystem
 
             foreach (PathNode node in infectedNode)
             {
-                node.IsInfected = true;
+                node.IsInfected = false;
             }
         }
     }

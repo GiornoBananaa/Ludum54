@@ -7,8 +7,6 @@ namespace ItemsSystem
     {
         [SerializeField] private Item item;
 
-        private bool _isHidden = false;
-
         private void Update()
         {
             if (item == null)

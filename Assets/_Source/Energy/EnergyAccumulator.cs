@@ -40,7 +40,10 @@ public class EnergyAccumulator : MonoBehaviour
     private void CheckEnergy()
     {
         if(currentEnergy <= 0)
+        {
             energyDepleted?.Invoke(this, EventArgs.Empty);
+            GameManager.Instance.LoseGame();//Ќужно через событие пределать по хорошему
+        }
     }
 
     public void AddEnegry(float amount)
