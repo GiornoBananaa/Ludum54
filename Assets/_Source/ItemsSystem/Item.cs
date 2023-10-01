@@ -2,26 +2,26 @@ using UnityEngine;
 
 namespace ItemsSystem
 {
-    public class Item : MonoBehaviour
+    [RequireComponent(typeof(Collider2D))]
+    public abstract class Item : MonoBehaviour
     {
         [SerializeField] protected LayerMask playerLayerMask;
 
-        protected Inventory Inventory;
-        
-        
-        public void Construct(Inventory inventory)
-        {
-            Inventory = inventory;
-        }
-        
-        protected virtual void PickUp() { }
-        
-        protected void OnCollisionEnter2D(Collision2D collision)
+        protected abstract bool PickUp(Inventory targetInventory);
+
+        protected void OnTriggerEnter2D(Collider2D collision)
         {
             if (playerLayerMask == (playerLayerMask | (1 << collision.gameObject.layer)))
             {
-                PickUp();
-                Destroy(gameObject);
+                Inventory targetInventory;
+                if (collision.gameObject.TryGetComponent(out targetInventory))
+                {
+                    if (PickUp(targetInventory))
+                    {
+                        Destroy(gameObject);
+
+                    }
+                }
             }
         }
     }
