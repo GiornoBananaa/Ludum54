@@ -53,7 +53,7 @@ namespace PathSystem
         private bool _isActivated = false;
         private bool _isBlocked = false;
         private bool _isInfected = false;
-        
+
         private void Start()
         {
             for (int i = 0; i < NearNodes.Length; i++)
