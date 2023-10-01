@@ -8,7 +8,7 @@ namespace ItemsSystem
     [RequireComponent(typeof(Collider2D))]
     public class CoreItemUnloader : MonoBehaviour
     {
-        [SerializeField] private int energyExchangeRate=1;
+        [SerializeField] private int energyExchangeRate = 1;
         [SerializeField] private List<InfectedPath> infectedPaths;
         
         private EnergyAccumulator energyAccumulator;
