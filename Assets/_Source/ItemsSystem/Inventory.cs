@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace ItemsSystem
@@ -9,6 +10,8 @@ namespace ItemsSystem
         [SerializeField] private AudioSource corePickUpAudio;
         [SerializeField] private AudioSource keyPickUpAudio;
 
+        public event EventHandler OnInventoryChanged;
+
         public int keys { get; private set; }
         public int energy { get; private set; }
         public int fragments { get; private set; }
@@ -18,6 +21,7 @@ namespace ItemsSystem
             if (IsInventoryFull()) return false;
             keyPickUpAudio.Play();
             keys += amount;
+            OnInventoryChanged?.Invoke(this, new EventArgs());
             return true;
         }
 
@@ -26,6 +30,7 @@ namespace ItemsSystem
             if (IsInventoryFull()) return false;
             energyPickUpAudio.Play();
             energy += amount;
+            OnInventoryChanged?.Invoke(this, new EventArgs());
             return true;
         }
         
@@ -34,10 +39,11 @@ namespace ItemsSystem
             if (IsInventoryFull()) return false;
             corePickUpAudio.Play();
             fragments += amount;
+            OnInventoryChanged?.Invoke(this, new EventArgs());
             return true;
         }
         
-        private bool IsInventoryFull()
+        public bool IsInventoryFull()
         {
             return energy + keys + fragments >= inventorySize;
         }
@@ -47,6 +53,12 @@ namespace ItemsSystem
             energy = 0;
             keys = 0;
             fragments = 0;
+            OnInventoryChanged?.Invoke(this, new EventArgs());
+        }
+
+        public int GetInventorySize()
+        {
+            return inventorySize;
         }
     }
 }
