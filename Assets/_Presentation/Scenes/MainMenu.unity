@@ -497,7 +497,6 @@ GameObject:
   m_Component:
   - component: {fileID: 681188782}
   - component: {fileID: 681188781}
-  - component: {fileID: 681188780}
   m_Layer: 0
   m_Name: ButtonSound
   m_TagString: Untagged
@@ -505,18 +504,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &681188780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 681188779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95b2e7d377fc83c47be265ddbbdc9097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &681188781
 AudioSource:
   m_ObjectHideFlags: 0
@@ -527,7 +514,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d9cf7e19f8208594995eff49135d1a2e, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 25a1d92e740840344bd607d2f7d91622, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
