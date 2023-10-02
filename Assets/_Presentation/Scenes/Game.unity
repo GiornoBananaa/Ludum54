@@ -1525,14 +1525,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 525990753792717865, guid: a33054349f6cfeb48ba8c23dbc063aa9, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: f370ffab83bc1ab4c8d688de190a2f96, type: 3}
-    - target: {fileID: 3006295537557704885, guid: a33054349f6cfeb48ba8c23dbc063aa9, type: 3}
-      propertyPath: m_Name
-      value: ObstacleVirus
-      objectReference: {fileID: 0}
     - target: {fileID: 3963313512945525234, guid: a33054349f6cfeb48ba8c23dbc063aa9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1577,23 +1569,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sounds
       objectReference: {fileID: 0}
-    - target: {fileID: 8252488026190886827, guid: a33054349f6cfeb48ba8c23dbc063aa9, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 5bc3a462209bdd349b8a9b5180519aa2, type: 3}
-    - target: {fileID: 8448088276421233148, guid: a33054349f6cfeb48ba8c23dbc063aa9, type: 3}
-      propertyPath: m_Volume
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8448088276421233148, guid: a33054349f6cfeb48ba8c23dbc063aa9, type: 3}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: f5dea79c8d850c14391cc10c37b8ee9b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a33054349f6cfeb48ba8c23dbc063aa9, type: 3}
+--- !u!82 &749262040 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 525990753792717865, guid: a33054349f6cfeb48ba8c23dbc063aa9, type: 3}
+  m_PrefabInstance: {fileID: 749262039}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &749262041 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9107769995346005702, guid: a33054349f6cfeb48ba8c23dbc063aa9, type: 3}
+  m_PrefabInstance: {fileID: 749262039}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &749262042 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1342549832947901631, guid: a33054349f6cfeb48ba8c23dbc063aa9, type: 3}
+  m_PrefabInstance: {fileID: 749262039}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &749262043 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3633019009481949351, guid: a33054349f6cfeb48ba8c23dbc063aa9, type: 3}
+  m_PrefabInstance: {fileID: 749262039}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &749262044 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 9212232798437252896, guid: a33054349f6cfeb48ba8c23dbc063aa9, type: 3}
+  m_PrefabInstance: {fileID: 749262039}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &749262045 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8448088276421233148, guid: a33054349f6cfeb48ba8c23dbc063aa9, type: 3}
+  m_PrefabInstance: {fileID: 749262039}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &749262046 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8252488026190886827, guid: a33054349f6cfeb48ba8c23dbc063aa9, type: 3}
+  m_PrefabInstance: {fileID: 749262039}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &751381813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2095,8 +2110,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7360f36e61396da40a1ab9af6d6284bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _clickNode: {fileID: 0}
-  _clickObstacle: {fileID: 0}
+  _clickNode: {fileID: 749262041}
+  _clickVirus: {fileID: 749262040}
+  _clickBlocked: {fileID: 1213950141}
 --- !u!4 &960310269
 Transform:
   m_ObjectHideFlags: 0
@@ -2521,6 +2537,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e1637f7072ae9c4d9a8182023139caf, type: 3}
+--- !u!82 &1213950141 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4134620523550239326, guid: a33054349f6cfeb48ba8c23dbc063aa9, type: 3}
+  m_PrefabInstance: {fileID: 749262039}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1227946062 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6914867034426378787, guid: 4e1637f7072ae9c4d9a8182023139caf, type: 3}
@@ -4011,6 +4032,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1142806472617615450, guid: a897dcafa7ec0324f9753ffa31593793, type: 3}
+      propertyPath: keyPickUpAudio
+      value: 
+      objectReference: {fileID: 749262043}
+    - target: {fileID: 1142806472617615450, guid: a897dcafa7ec0324f9753ffa31593793, type: 3}
+      propertyPath: corePickUpAudio
+      value: 
+      objectReference: {fileID: 749262044}
+    - target: {fileID: 1142806472617615450, guid: a897dcafa7ec0324f9753ffa31593793, type: 3}
+      propertyPath: energyPickUpAudio
+      value: 
+      objectReference: {fileID: 749262045}
     - target: {fileID: 3170719477204297528, guid: a897dcafa7ec0324f9753ffa31593793, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -8181,6 +8214,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: CoreNode
       objectReference: {fileID: 0}
+    - target: {fileID: 5554186223626639116, guid: 1383deed8fffe8c469c17449ed03f114, type: 3}
+      propertyPath: shardPlace
+      value: 
+      objectReference: {fileID: 749262042}
+    - target: {fileID: 5554186223626639116, guid: 1383deed8fffe8c469c17449ed03f114, type: 3}
+      propertyPath: virusUnlocker
+      value: 
+      objectReference: {fileID: 749262046}
     - target: {fileID: 5554186223626639116, guid: 1383deed8fffe8c469c17449ed03f114, type: 3}
       propertyPath: energyExchangeRate
       value: 20

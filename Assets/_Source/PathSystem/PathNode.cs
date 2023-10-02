@@ -84,6 +84,10 @@ namespace PathSystem
             {
                 InputListener.Instance.VirusClick();
             }
+            else if (IsBlocked)
+            {
+                InputListener.Instance.BlockedClick();
+            }
         }
         
         private void OnMouseExit()

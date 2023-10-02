@@ -10,9 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8748397885990445928}
   - component: {fileID: 9107769995346005702}
-  - component: {fileID: 8770478164423325009}
   m_Layer: 0
-  m_Name: OnNodeClick
+  m_Name: OnNodeMoveClick
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43,7 +42,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b3bc86068795aca44850994aa521220c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2b0142a8f28fcb64c9da06a60b20523f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -129,19 +128,134 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8770478164423325009
-MonoBehaviour:
+--- !u!1 &2374208515885680958
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1281971198493590985}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6036294759141908161}
+  - component: {fileID: 4134620523550239326}
+  m_Layer: 0
+  m_Name: OnNodeBlockedClick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6036294759141908161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2374208515885680958}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3963313512945525234}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &4134620523550239326
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2374208515885680958}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95b2e7d377fc83c47be265ddbbdc9097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audioSource: {fileID: 9107769995346005702}
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f081b3c12e2c11f42b24424b21e773d6, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &3006295537557704885
 GameObject:
   m_ObjectHideFlags: 0
@@ -152,7 +266,6 @@ GameObject:
   m_Component:
   - component: {fileID: 50402579017331515}
   - component: {fileID: 525990753792717865}
-  - component: {fileID: 6546061805373322828}
   m_Layer: 0
   m_Name: ObstacleVirus
   m_TagString: Untagged
@@ -271,19 +384,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6546061805373322828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3006295537557704885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95b2e7d377fc83c47be265ddbbdc9097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audioSource: {fileID: 525990753792717865}
 --- !u!1 &3937974524354745370
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,7 +394,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1329900947454112810}
   - component: {fileID: 1342549832947901631}
-  - component: {fileID: 743340816268411276}
   m_Layer: 0
   m_Name: PlaceCoreShard
   m_TagString: Untagged
@@ -413,19 +512,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &743340816268411276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3937974524354745370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95b2e7d377fc83c47be265ddbbdc9097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audioSource: {fileID: 1342549832947901631}
 --- !u!1 &5883700656189642262
 GameObject:
   m_ObjectHideFlags: 0
@@ -436,7 +522,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3013935176557434667}
   - component: {fileID: 9212232798437252896}
-  - component: {fileID: 5177411606369300595}
   m_Layer: 0
   m_Name: KeyPickUp
   m_TagString: Untagged
@@ -555,19 +640,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5177411606369300595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5883700656189642262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95b2e7d377fc83c47be265ddbbdc9097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audioSource: {fileID: 9212232798437252896}
 --- !u!1 &6700987096296626785
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,6 +670,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8748397885990445928}
+  - {fileID: 6036294759141908161}
   - {fileID: 600350838027357326}
   - {fileID: 3013935176557434667}
   - {fileID: 7435438737021509500}
@@ -617,7 +690,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7435438737021509500}
   - component: {fileID: 3633019009481949351}
-  - component: {fileID: 8845050032691690864}
   m_Layer: 0
   m_Name: ShardsPickUp
   m_TagString: Untagged
@@ -736,19 +808,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &8845050032691690864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6919216993772879847}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95b2e7d377fc83c47be265ddbbdc9097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audioSource: {fileID: 3633019009481949351}
 --- !u!1 &7613190277344462873
 GameObject:
   m_ObjectHideFlags: 0
@@ -759,7 +818,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1159665892289823908}
   - component: {fileID: 8252488026190886827}
-  - component: {fileID: 5607551128185556080}
   m_Layer: 0
   m_Name: VirusUnlock
   m_TagString: Untagged
@@ -878,19 +936,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5607551128185556080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7613190277344462873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95b2e7d377fc83c47be265ddbbdc9097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audioSource: {fileID: 8252488026190886827}
 --- !u!1 &7907385421627599661
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,7 +946,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7605720130089381474}
   - component: {fileID: 6872128140355797671}
-  - component: {fileID: 4489001617486822010}
   m_Layer: 0
   m_Name: GameStart
   m_TagString: Untagged
@@ -1020,19 +1064,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &4489001617486822010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7907385421627599661}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95b2e7d377fc83c47be265ddbbdc9097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audioSource: {fileID: 6872128140355797671}
 --- !u!1 &8651570446935201217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1043,7 +1074,6 @@ GameObject:
   m_Component:
   - component: {fileID: 600350838027357326}
   - component: {fileID: 8448088276421233148}
-  - component: {fileID: 2684141995504192057}
   m_Layer: 0
   m_Name: EnergyPickUp
   m_TagString: Untagged
@@ -1078,7 +1108,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f5dea79c8d850c14391cc10c37b8ee9b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1162,16 +1192,3 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2684141995504192057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8651570446935201217}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95b2e7d377fc83c47be265ddbbdc9097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _audioSource: {fileID: 8448088276421233148}
