@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Presentation/Scenes/Lose.unity
     guid: 6b02f160848e2d447b3bc44ef540fd07
+  - enabled: 1
+    path: Assets/_Presentation/Scenes/Tutorial.unity
+    guid: 2706034968286a245aabe5d2a306404b
   m_configObjects: {}

@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
         Game,
         Win,
         Lose,
+        Tutorial,
     }
     private void Awake()
     {
@@ -33,7 +34,10 @@ public class GameManager : MonoBehaviour
     {
         LoadScene(Scenes.Game);
     }
-
+    public void StartTutorial()
+    {
+        LoadScene(Scenes.Tutorial);
+    }
     public void LoseGame()
     {
         LoadScene(Scenes.Lose);
