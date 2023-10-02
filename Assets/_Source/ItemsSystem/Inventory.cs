@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace ItemsSystem
@@ -5,6 +6,8 @@ namespace ItemsSystem
     public class Inventory : MonoBehaviour
     {
         [SerializeField] private int inventorySize;
+
+        public event EventHandler OnInventoryChanged;
 
         public int keys { get; private set; }
         public int energy { get; private set; }
@@ -14,6 +17,7 @@ namespace ItemsSystem
         {
             if (IsInventoryFull()) return false;
             keys += amount;
+            OnInventoryChanged?.Invoke(this, new EventArgs());
             return true;
         }
 
@@ -21,6 +25,7 @@ namespace ItemsSystem
         {
             if (IsInventoryFull()) return false;
             energy += amount;
+            OnInventoryChanged?.Invoke(this, new EventArgs());
             return true;
         }
         
@@ -28,10 +33,11 @@ namespace ItemsSystem
         {
             if (IsInventoryFull()) return false;
             fragments += amount;
+            OnInventoryChanged?.Invoke(this, new EventArgs());
             return true;
         }
         
-        private bool IsInventoryFull()
+        public bool IsInventoryFull()
         {
             return energy + keys + fragments >= inventorySize;
         }
@@ -41,6 +47,12 @@ namespace ItemsSystem
             energy = 0;
             keys = 0;
             fragments = 0;
+            OnInventoryChanged?.Invoke(this, new EventArgs());
+        }
+
+        public int GetInventorySize()
+        {
+            return inventorySize;
         }
     }
 }
