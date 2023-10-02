@@ -46,6 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lineWidth: 0.2
   lineLayerOrder: -5
-  lineMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  lineMaterial: {fileID: 2100000, guid: f200253c2fc3f2144a9e8bc0eedfb872, type: 2}
   inputListener: {fileID: 0}
   player: {fileID: 0}
