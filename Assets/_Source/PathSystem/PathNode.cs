@@ -80,9 +80,9 @@ namespace PathSystem
             {
                 InputListener.Instance.MoveToNode(this);
             }
-            else
+            else if(IsInfected)
             {
-                InputListener.Instance.ObstacleClick();
+                InputListener.Instance.VirusClick();
             }
         }
         

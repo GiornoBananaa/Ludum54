@@ -12,6 +12,7 @@ namespace ItemsSystem
         [SerializeField] private List<InfectedPath> infectedPaths;
         [SerializeField] private List<GameObject> coreFragments;
         [SerializeField] private AudioSource virusUnlocker;
+        [SerializeField] private AudioSource shardPlace;
         
         private EnergyAccumulator energyAccumulator;
         
@@ -22,19 +23,21 @@ namespace ItemsSystem
         private void UnloadInventory(Inventory inventory)
         {
             energyAccumulator.AddEnegry(inventory.energy * energyExchangeRate);
+            if(inventory.keys > 0) virusUnlocker.Play();
+            
             for (int i = 0; i < inventory.keys; i++)
             {
                 if (infectedPaths.Count == 0) break;
-                if(virusUnlocker != null) virusUnlocker.Play();
                 infectedPaths[infectedPaths.Count-1].OpenPath();
                 infectedPaths.RemoveAt(infectedPaths.Count - 1);
             }
+            if(inventory.fragments > 0) shardPlace.Play();
             for (int i = 0; i < inventory.fragments; i++)
             {
                 if (coreFragments.Count == 0) break;
                 coreFragments[coreFragments.Count-1].SetActive(true);
                 coreFragments.RemoveAt(coreFragments.Count - 1);
-                Debug.Log(coreFragments.Count);
+
                 if(coreFragments.Count == 0) GameManager.Instance.WinGame();
             }
             inventory.Clear();
