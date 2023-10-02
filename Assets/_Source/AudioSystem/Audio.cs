@@ -50,6 +50,10 @@ namespace AudioSystem
                     _music.Play();
                 }
             }
+            else
+            {
+                _music.clip = null;
+            }
         }
     
         public void MuteAudio(bool value)
