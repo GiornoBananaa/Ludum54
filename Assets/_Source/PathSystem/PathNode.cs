@@ -14,6 +14,7 @@ namespace PathSystem
         [SerializeField] private Sprite activatedSprite;
         [SerializeField] private Sprite blockedSprite;
         [SerializeField] private Sprite infectedSprite;
+        [SerializeField] private Sprite highlightedSprite;
         [SerializeField] private Sprite deafultSprite;
         [SerializeField] private bool isUnchangeable;
         
@@ -70,7 +71,7 @@ namespace PathSystem
         private void OnMouseEnter()
         {
             if(IsActivated)
-                spriteRenderer.sprite = deafultSprite;
+                spriteRenderer.sprite = highlightedSprite;
         }
 
         private void OnMouseDown()
