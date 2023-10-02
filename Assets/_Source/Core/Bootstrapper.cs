@@ -10,6 +10,8 @@ namespace Core
         [SerializeField] private float lineWidth;
         [SerializeField] private int lineLayerOrder;
         [SerializeField] private Material lineMaterial;
+        [SerializeField] private Material blockedPath;
+        [SerializeField] private Material deafultPath;
         [SerializeField] private InputListener inputListener;
         [SerializeField] private Player player;
         
@@ -24,7 +26,8 @@ namespace Core
         private void Init()
         {
             PathNode.Links = new PathLinkDictionary(lineWidth,lineLayerOrder,lineMaterial);
-            _playerMovement = new PlayerMovement(player.transform, player.MoveSpeed ,player.spawnNode,player.blockedSteps);
+            _playerMovement = new PlayerMovement(player.transform, player.MoveSpeed,
+                player.spawnNode,player.blockedSteps, blockedPath, deafultPath);
             _playerInvoker = new PlayerInvoker(_playerMovement);
             player.Construct(_playerInvoker);
             inputListener.Construct(_playerInvoker);

@@ -47,5 +47,7 @@ MonoBehaviour:
   lineWidth: 0.2
   lineLayerOrder: -5
   lineMaterial: {fileID: 2100000, guid: f200253c2fc3f2144a9e8bc0eedfb872, type: 2}
+  blockedPath: {fileID: 2100000, guid: 76de75698c867e64e8d5f1c3a624db9e, type: 2}
+  deafultPath: {fileID: 2100000, guid: f200253c2fc3f2144a9e8bc0eedfb872, type: 2}
   inputListener: {fileID: 0}
   player: {fileID: 0}
