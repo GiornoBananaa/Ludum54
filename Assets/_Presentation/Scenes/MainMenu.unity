@@ -731,7 +731,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d2df08d9d38518b46806c43c37804db4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -831,7 +831,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _scenesMusic: []
   _music: {fileID: 1475527023}
-  _musicVolumeDeafult: 0
+  _musicVolumeDeafult: 0.234
   _soundVolumeDeafult: 0.6
 --- !u!4 &1475527025
 Transform:
