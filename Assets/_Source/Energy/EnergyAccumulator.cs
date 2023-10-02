@@ -42,7 +42,7 @@ public class EnergyAccumulator : MonoBehaviour
         if(currentEnergy <= 0)
         {
             energyDepleted?.Invoke(this, EventArgs.Empty);
-            GameManager.Instance.LoseGame();//Нужно через событие пределать по хорошему
+            GameManager.Instance.LoseGame();//РќСѓР¶РЅРѕ С‡РµСЂРµР· СЃРѕР±С‹С‚РёРµ РїСЂРµРґРµР»Р°С‚СЊ РїРѕ С…РѕСЂРѕС€РµРјСѓ
         }
     }
 
