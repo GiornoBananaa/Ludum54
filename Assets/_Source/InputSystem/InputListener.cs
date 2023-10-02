@@ -28,12 +28,12 @@ namespace InputSystem
 
         public void ObstacleClick()
         {
-            _clickObstacle.Play();
+            if(_clickObstacle != null)_clickObstacle.Play();
         }
         
         public void MoveToNode(PathNode node)
         {
-            _clickNode.Play();
+            if(_clickNode != null)_clickNode.Play();
             _playerInvoker.SetNewPosition(node);
         }
     }

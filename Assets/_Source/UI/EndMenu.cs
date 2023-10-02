@@ -16,7 +16,7 @@ public class EndMenu : MonoBehaviour
     
     private void StartGame()
     {
-        buttonAudio.Play();
+        if(buttonAudio != null)buttonAudio.Play();
         Invoke("ManagerStartGame",0.07f);
     }
     
@@ -26,7 +26,7 @@ public class EndMenu : MonoBehaviour
     }
     private void ReturnToMenu()
     {
-        buttonAudio.Play();
+        if(buttonAudio != null)buttonAudio.Play();
         Invoke("ManagerReturnToMainMenu",0.07f);
     }
     

@@ -15,7 +15,7 @@ namespace UI
 
         private void StartGame()
         {
-            buttonAudio.Play();
+            if(buttonAudio != null)buttonAudio.Play();
         
             Invoke("ManagerStartGame",0.07f);
         }

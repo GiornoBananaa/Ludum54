@@ -16,7 +16,7 @@ namespace ItemsSystem
         public bool AddKey(int amount = 1)
         {
             if (IsInventoryFull()) return false;
-            keyPickUpAudio.Play();
+            if(keyPickUpAudio != null)keyPickUpAudio.Play();
             keys += amount;
             return true;
         }
@@ -24,7 +24,7 @@ namespace ItemsSystem
         public bool AddEnergy(int amount = 1)
         {
             if (IsInventoryFull()) return false;
-            energyPickUpAudio.Play();
+            if(energyPickUpAudio != null)energyPickUpAudio.Play();
             energy += amount;
             return true;
         }
@@ -32,7 +32,7 @@ namespace ItemsSystem
         public bool AddFragment(int amount = 1)
         {
             if (IsInventoryFull()) return false;
-            corePickUpAudio.Play();
+            if(corePickUpAudio != null)corePickUpAudio.Play();
             fragments += amount;
             return true;
         }
