@@ -16,7 +16,9 @@ public class EndMenu : MonoBehaviour
         restartButton.onClick.AddListener(StartGame);
         mainMenuButton.onClick.AddListener(ReturnToMenu);
 
-        timeText.text = GameManager.Instance.TimeElapsed.ToString("F2",CultureInfo.InvariantCulture);
+        int minutes = (int)(GameManager.Instance.TimeElapsed / 60f);
+        float seconds = GameManager.Instance.TimeElapsed % 60f;
+        timeText.text = $"{minutes}:{seconds.ToString("F2",CultureInfo.InvariantCulture)}";
     }
     
     private void StartGame()

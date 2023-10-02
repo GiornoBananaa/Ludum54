@@ -2961,6 +2961,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 186653852135224990, guid: 4e1637f7072ae9c4d9a8182023139caf, type: 3}
   m_PrefabInstance: {fileID: 2943144353587514797}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1368695825
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1368695827}
+  - component: {fileID: 1368695826}
+  m_Layer: 0
+  m_Name: Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1368695826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368695825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 649c6cd7e850e2844b48f6400a6f7eee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1368695827
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368695825}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 352.18372, y: 249.1311, z: -2.8406675}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1384840435 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6914867034426378787, guid: 4e1637f7072ae9c4d9a8182023139caf, type: 3}
@@ -22263,3 +22307,4 @@ SceneRoots:
   - {fileID: 1424341601}
   - {fileID: 1297288519}
   - {fileID: 550475548}
+  - {fileID: 1368695827}
