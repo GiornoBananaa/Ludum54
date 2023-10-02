@@ -9,9 +9,16 @@ namespace AudioSystem
 
         private void Start()
         {
-            _audioSource = GetComponent<AudioSource>();
-            _maxSound = _audioSource.volume;
-            _audioSource.volume *= Audio.Instance.SoundVolume;
+            if (_audioSource != null && Audio.Instance != null)
+            {
+                _audioSource = GetComponent<AudioSource>();
+                _maxSound = _audioSource.volume;
+                _audioSource.volume *= Audio.Instance.SoundVolume;
+            }
+            else
+            {
+                gameObject.SetActive(false);
+            }
         }
 
         private void OnSoundVolumeChange()
