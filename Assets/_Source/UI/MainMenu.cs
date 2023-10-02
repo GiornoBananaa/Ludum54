@@ -22,7 +22,7 @@ namespace UI
     
         private void ManagerStartGame()
         {
-            GameManager.Instance.StartGame();
+            GameManager.Instance.StartTutorial();
         }
     }
 }

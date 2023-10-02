@@ -6,12 +6,16 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+
+    public float TimeElapsed;
+    
     public enum Scenes : int
     {
         MainMenu,
         Game,
         Win,
         Lose,
+        Tutorial,
     }
     private void Awake()
     {
@@ -33,7 +37,10 @@ public class GameManager : MonoBehaviour
     {
         LoadScene(Scenes.Game);
     }
-
+    public void StartTutorial()
+    {
+        LoadScene(Scenes.Tutorial);
+    }
     public void LoseGame()
     {
         LoadScene(Scenes.Lose);
