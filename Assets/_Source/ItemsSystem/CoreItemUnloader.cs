@@ -10,6 +10,7 @@ namespace ItemsSystem
     {
         [SerializeField] private int energyExchangeRate = 1;
         [SerializeField] private List<InfectedPath> infectedPaths;
+        [SerializeField] private List<GameObject> coreFragments;
         
         private EnergyAccumulator energyAccumulator;
         private void Start()
@@ -22,6 +23,11 @@ namespace ItemsSystem
             for (int i = 0; i < inventory.keys; i++)
             {
                 infectedPaths[infectedPaths.Count-1].OpenPath();
+                infectedPaths.RemoveAt(infectedPaths.Count - 1);
+            }
+            for (int i = 0; i < inventory.fragments; i++)
+            {
+                coreFragments[infectedPaths.Count-1].SetActive(true);
                 infectedPaths.RemoveAt(infectedPaths.Count - 1);
             }
             inventory.Clear();
