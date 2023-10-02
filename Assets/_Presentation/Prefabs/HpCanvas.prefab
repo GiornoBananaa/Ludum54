@@ -1253,7 +1253,6 @@ GameObject:
   - component: {fileID: 4022699149303689167}
   - component: {fileID: 6257044060211773472}
   - component: {fileID: 4965162874678509399}
-  - component: {fileID: 2538653601572319850}
   - component: {fileID: 5395829807034893579}
   m_Layer: 5
   m_Name: HpCanvas
@@ -1345,14 +1344,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!222 &2538653601572319850
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5209713685547116844}
-  m_CullTransparentMesh: 1
 --- !u!114 &5395829807034893579
 MonoBehaviour:
   m_ObjectHideFlags: 0
