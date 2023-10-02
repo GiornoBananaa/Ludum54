@@ -4,7 +4,7 @@ namespace AudioSystem
 {
     public class SoundSetter : MonoBehaviour
     {
-        private AudioSource _audioSource;
+        [SerializeField] private AudioSource _audioSource;
         private float _maxSound;
 
         private void Start()
