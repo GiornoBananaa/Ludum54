@@ -51,7 +51,8 @@ MonoBehaviour:
   activatedSprite: {fileID: 1924512268, guid: b4560e97a8b7f54408a7d5a9762da934, type: 3}
   blockedSprite: {fileID: 470871240, guid: b4560e97a8b7f54408a7d5a9762da934, type: 3}
   infectedSprite: {fileID: 1809098713, guid: b4560e97a8b7f54408a7d5a9762da934, type: 3}
-  deafultSprite: {fileID: 337701963, guid: b4560e97a8b7f54408a7d5a9762da934, type: 3}
+  highlightedSprite: {fileID: 337701963, guid: b4560e97a8b7f54408a7d5a9762da934, type: 3}
+  deafultSprite: {fileID: -172554199, guid: b4560e97a8b7f54408a7d5a9762da934, type: 3}
   isUnchangeable: 0
 --- !u!212 &5990408945514538830
 SpriteRenderer:
@@ -94,7 +95,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 470871240, guid: b4560e97a8b7f54408a7d5a9762da934, type: 3}
+  m_Sprite: {fileID: -172554199, guid: b4560e97a8b7f54408a7d5a9762da934, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

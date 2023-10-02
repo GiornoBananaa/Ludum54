@@ -6,6 +6,9 @@ namespace ItemsSystem
     public class Inventory : MonoBehaviour
     {
         [SerializeField] private int inventorySize;
+        [SerializeField] private AudioSource energyPickUpAudio;
+        [SerializeField] private AudioSource corePickUpAudio;
+        [SerializeField] private AudioSource keyPickUpAudio;
 
         public event EventHandler OnInventoryChanged;
 
@@ -16,6 +19,7 @@ namespace ItemsSystem
         public bool AddKey(int amount = 1)
         {
             if (IsInventoryFull()) return false;
+            keyPickUpAudio.Play();
             keys += amount;
             OnInventoryChanged?.Invoke(this, new EventArgs());
             return true;
@@ -24,6 +28,7 @@ namespace ItemsSystem
         public bool AddEnergy(int amount = 1)
         {
             if (IsInventoryFull()) return false;
+            energyPickUpAudio.Play();
             energy += amount;
             OnInventoryChanged?.Invoke(this, new EventArgs());
             return true;
@@ -32,6 +37,7 @@ namespace ItemsSystem
         public bool AddFragment(int amount = 1)
         {
             if (IsInventoryFull()) return false;
+            corePickUpAudio.Play();
             fragments += amount;
             OnInventoryChanged?.Invoke(this, new EventArgs());
             return true;

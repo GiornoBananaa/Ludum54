@@ -9,6 +9,7 @@ namespace AudioSystem
         [SerializeField] private AudioClip[] _scenesMusic;
         [SerializeField] private AudioSource _music;
         [Range(0,1)][SerializeField] private float _musicVolumeDeafult;
+        [Range(0,1)][SerializeField] private float _soundVolumeDeafult;
 
         public static Action OnSoundVolumeChange;
         
@@ -37,8 +38,10 @@ namespace AudioSystem
             SetMusicClip(level);
         }
 
-        private bool SetMusicClip(int level)
+        private void SetMusicClip(int level)
         {
+            if (_scenesMusic.Length == 0) return;
+            
             if (_scenesMusic[level] != null)
             {
                 if (_music.clip is null || _scenesMusic[level].name != _music.clip.name)
@@ -46,14 +49,10 @@ namespace AudioSystem
                     _music.clip = _scenesMusic[level];
                     _music.Play();
                 }
-
-                return true;
             }
             else
             {
                 _music.clip = null;
-            
-                return false;
             }
         }
     
@@ -89,7 +88,7 @@ namespace AudioSystem
         {
             get
             {
-                return PlayerPrefs.GetFloat("Sound", 1f);
+                return PlayerPrefs.GetFloat("Sound", _soundVolumeDeafult);
             }
             private set
             {

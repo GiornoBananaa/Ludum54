@@ -80,6 +80,10 @@ namespace PathSystem
             {
                 InputListener.Instance.MoveToNode(this);
             }
+            else
+            {
+                InputListener.Instance.ObstacleClick();
+            }
         }
         
         private void OnMouseExit()
