@@ -126,6 +126,7 @@ public class SceneGUINodeConnecting : MonoBehaviour
         var array = infectedPathSerObj.FindProperty("infectedNode");
 
         infectedPathSerObj.FindProperty("keySpawner").objectReferenceValue = FindObjectOfType<KeySpawner>();
+        infectedPathSerObj.FindProperty("coreShardSpawner").objectReferenceValue = FindObjectOfType<CoreShardSpawner>();
 
         for (int i = 0; i < pathNodes.Count; i++)
         {
@@ -195,5 +196,4 @@ public class SceneGUINodeConnecting : MonoBehaviour
 
         return paths;
     }
-
 }

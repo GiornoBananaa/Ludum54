@@ -44,3 +44,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d14d874963bfdf64aa1092fa324bdff3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  infectedPathPrefab: {fileID: 872808583546404708, guid: f991c5410884204488d0155867002d30, type: 3}

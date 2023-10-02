@@ -10,10 +10,10 @@ namespace ItemsSystem
         public int energy { get; private set; }
         public int fragments { get; private set; }
 
-        public bool AddKey()
+        public bool AddKey(int amount = 1)
         {
             if (IsInventoryFull()) return false;
-            keys += 1;
+            keys += amount;
             return true;
         }
 
@@ -23,6 +23,14 @@ namespace ItemsSystem
             energy += amount;
             return true;
         }
+        
+        public bool AddFragment(int amount = 1)
+        {
+            if (IsInventoryFull()) return false;
+            fragments += amount;
+            return true;
+        }
+        
         private bool IsInventoryFull()
         {
             return energy + keys + fragments >= inventorySize;

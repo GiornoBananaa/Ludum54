@@ -12,22 +12,24 @@ namespace ItemsSystem
         [SerializeField] private int count;
         [SerializeField] private int maxKeysOnOnePart;
 
+        private int _spawned;
+        
         private void Awake()
         {
+            _spawned++;
             Transform transform = firstKeySpawn[Random.Range(0, firstKeySpawn.Length)];
             Instantiate(keyPrefab, transform.position, Quaternion.identity);
-            count--;
         }
 
         public void Spawn(PathNode[] InfectedNodes)
         {
-            int keys = Random.Range(0, maxKeysOnOnePart+1);
-            for (int i = 0; i < InfectedNodes.Length; i++)
+            int keys = Random.Range(1, maxKeysOnOnePart+1);
+            for (int i = 0; i < keys; i++)
             {
-                if(count <= 0) return;
+                if(_spawned >= count) return;
                 Transform transform = InfectedNodes[Random.Range(0, InfectedNodes.Length)].transform;
                 Instantiate(keyPrefab, transform.position, Quaternion.identity);
-                count--;
+                _spawned++;
             }
         }
     }

@@ -9,6 +9,7 @@ namespace PathSystem
     {
         [SerializeField] private PathNode[] infectedNode;
         [SerializeField] private KeySpawner keySpawner;
+        [SerializeField] private CoreShardSpawner coreShardSpawner;
         [SerializeField] private Material infectedMaterial;
         [SerializeField] private Material deafultMaterial;
 
@@ -19,6 +20,7 @@ namespace PathSystem
             lines = new List<LineRenderer>();
             Invoke("BlockPath",0.4f);
             keySpawner.Spawn(infectedNode);
+            coreShardSpawner.Spawn(infectedNode);
         }
 
         private void BlockPath()
