@@ -8,6 +8,7 @@ namespace InputSystem
     {
         [SerializeField] private AudioSource _clickNode;
         [SerializeField] private AudioSource _clickVirus;
+        [SerializeField] private AudioSource _clickBlocked;
         private PlayerInvoker _playerInvoker;
         public static InputListener Instance;
         
@@ -29,6 +30,10 @@ namespace InputSystem
         public void VirusClick()
         {
             if(_clickVirus != null)_clickVirus.Play();
+        }
+        public void BlockedClick()
+        {
+            if(_clickBlocked != null)_clickBlocked.Play();
         }
         
         public void MoveToNode(PathNode node)

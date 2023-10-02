@@ -548,7 +548,6 @@ GameObject:
   m_Component:
   - component: {fileID: 576564070}
   - component: {fileID: 576564069}
-  - component: {fileID: 576564068}
   m_Layer: 0
   m_Name: LoseSound
   m_TagString: Untagged
@@ -556,18 +555,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &576564068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 576564067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95b2e7d377fc83c47be265ddbbdc9097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &576564069
 AudioSource:
   m_ObjectHideFlags: 0
