@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+
+    public float TimeElapsed;
+    
     public enum Scenes : int
     {
         MainMenu,
