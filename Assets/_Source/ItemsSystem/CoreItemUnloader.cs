@@ -13,6 +13,7 @@ namespace ItemsSystem
         [SerializeField] private List<GameObject> coreFragments;
         
         private EnergyAccumulator energyAccumulator;
+        
         private void Start()
         {
             energyAccumulator = GetComponent<EnergyAccumulator>();
@@ -22,13 +23,17 @@ namespace ItemsSystem
             energyAccumulator.AddEnegry(inventory.energy * energyExchangeRate);
             for (int i = 0; i < inventory.keys; i++)
             {
+                if (infectedPaths.Count == 0) break;
                 infectedPaths[infectedPaths.Count-1].OpenPath();
                 infectedPaths.RemoveAt(infectedPaths.Count - 1);
             }
             for (int i = 0; i < inventory.fragments; i++)
             {
-                coreFragments[infectedPaths.Count-1].SetActive(true);
-                infectedPaths.RemoveAt(infectedPaths.Count - 1);
+                if (coreFragments.Count == 0) break;
+                coreFragments[coreFragments.Count-1].SetActive(true);
+                coreFragments.RemoveAt(coreFragments.Count - 1);
+                Debug.Log(coreFragments.Count);
+                if(coreFragments.Count == 0) GameManager.Instance.WinGame();
             }
             inventory.Clear();
         }

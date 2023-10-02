@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 248220999317021205}
   - component: {fileID: 5668073438581741243}
   - component: {fileID: 8528910428971468748}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: CoreShardUnit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
