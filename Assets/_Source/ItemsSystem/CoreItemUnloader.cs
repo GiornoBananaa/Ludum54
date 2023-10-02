@@ -11,6 +11,7 @@ namespace ItemsSystem
         [SerializeField] private int energyExchangeRate = 1;
         [SerializeField] private List<InfectedPath> infectedPaths;
         [SerializeField] private List<GameObject> coreFragments;
+        [SerializeField] private AudioSource virusUnlocker;
         
         private EnergyAccumulator energyAccumulator;
         
@@ -24,6 +25,7 @@ namespace ItemsSystem
             for (int i = 0; i < inventory.keys; i++)
             {
                 if (infectedPaths.Count == 0) break;
+                virusUnlocker.Play();
                 infectedPaths[infectedPaths.Count-1].OpenPath();
                 infectedPaths.RemoveAt(infectedPaths.Count - 1);
             }

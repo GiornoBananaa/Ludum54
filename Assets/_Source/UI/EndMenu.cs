@@ -6,10 +6,32 @@ using UnityEngine.UI;
 public class EndMenu : MonoBehaviour
 {
     [SerializeField] private Button mainMenuButton, restartButton;
+    [SerializeField] private AudioSource buttonAudio;
 
     private void Start()
     {
-        restartButton.onClick.AddListener(() => { GameManager.Instance.StartGame(); });
-        mainMenuButton.onClick.AddListener(() => { GameManager.Instance.ReturnToMainMenu(); });
+        restartButton.onClick.AddListener(StartGame);
+        mainMenuButton.onClick.AddListener(ReturnToMenu);
+    }
+    
+    private void StartGame()
+    {
+        buttonAudio.Play();
+        Invoke("ManagerStartGame",0.07f);
+    }
+    
+    private void ManagerStartGame()
+    {
+        GameManager.Instance.StartGame();
+    }
+    private void ReturnToMenu()
+    {
+        buttonAudio.Play();
+        Invoke("ManagerReturnToMainMenu",0.07f);
+    }
+    
+    private void ManagerReturnToMainMenu()
+    {
+        GameManager.Instance.ReturnToMainMenu();
     }
 }

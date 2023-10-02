@@ -510,6 +510,7 @@ MonoBehaviour:
   - {fileID: 6401919212304710943}
   - {fileID: 1154800512791142839}
   - {fileID: 1499379143808628116}
+  virusUnlocker: {fileID: 0}
 --- !u!114 &7312309125906612639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -611,7 +612,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 2
 --- !u!1 &5751574302149179468
 GameObject:
   m_ObjectHideFlags: 0

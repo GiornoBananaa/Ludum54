@@ -95,8 +95,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.91280574, g: 0.9150943, b: 0, a: 1}
+  m_Sprite: {fileID: -104518505, guid: b4560e97a8b7f54408a7d5a9762da934, type: 3}
+  m_Color: {r: 1, g: 0.84203786, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -119,6 +119,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventorySize: 5
+  energyPickUpAudio: {fileID: 0}
+  corePickUpAudio: {fileID: 0}
+  keyPickUpAudio: {fileID: 0}
 --- !u!58 &5497397749692225065
 CircleCollider2D:
   m_ObjectHideFlags: 0

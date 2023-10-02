@@ -1,14 +1,28 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MainMenu : MonoBehaviour
+namespace UI
 {
-    [SerializeField] private Button startButton;
-
-    private void Start()
+    public class MainMenu : MonoBehaviour
     {
-        startButton.onClick.AddListener(() => GameManager.Instance.StartGame());
+        [SerializeField] private Button startButton;
+        [SerializeField] private AudioSource buttonAudio;
+
+        private void Start()
+        {
+            startButton.onClick.AddListener(StartGame);
+        }
+
+        private void StartGame()
+        {
+            buttonAudio.Play();
+        
+            Invoke("ManagerStartGame",0.07f);
+        }
+    
+        private void ManagerStartGame()
+        {
+            GameManager.Instance.StartGame();
+        }
     }
 }

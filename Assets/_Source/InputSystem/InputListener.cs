@@ -6,6 +6,8 @@ namespace InputSystem
 {
     public class InputListener : MonoBehaviour
     {
+        [SerializeField] private AudioSource _clickNode;
+        [SerializeField] private AudioSource _clickObstacle;
         private PlayerInvoker _playerInvoker;
         public static InputListener Instance;
         
@@ -23,9 +25,15 @@ namespace InputSystem
         {
             _playerInvoker = playerInvoker;
         }
+
+        public void ObstacleClick()
+        {
+            _clickObstacle.Play();
+        }
         
         public void MoveToNode(PathNode node)
         {
+            _clickNode.Play();
             _playerInvoker.SetNewPosition(node);
         }
     }
