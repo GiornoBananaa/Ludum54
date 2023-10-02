@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Image))]
 public class Bar : MonoBehaviour
 {
     [SerializeField] private GameObject[] hpParts;
+    [SerializeField] private Image[] partsImages;
+    [SerializeField] private Color hpColor;
+    [SerializeField] private Color middleHpColor;
+    [SerializeField] private Color lowHpColor;
     private float _fillAmount = 0;
     private int currentPartsCount = 0;
     
@@ -44,7 +47,22 @@ public class Bar : MonoBehaviour
                 hpParts[i].SetActive(false);
             }
         }
-
+        
+        if (partsCount < hpParts.Length / 4 && !(currentPartsCount < hpParts.Length / 4))
+            UpdateColor(lowHpColor);
+        else if (partsCount < hpParts.Length / 2 && !(currentPartsCount < hpParts.Length / 2))
+            UpdateColor(middleHpColor);
+        else if (partsCount > hpParts.Length / 2 && !(currentPartsCount > hpParts.Length / 2))
+            UpdateColor(hpColor);
+        
         currentPartsCount = partsCount;
+    }
+
+    private void UpdateColor(Color color)
+    {
+        foreach (var image in partsImages)
+        {
+            image.color = color;
+        }
     }
 }
