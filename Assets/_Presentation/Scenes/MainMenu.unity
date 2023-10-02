@@ -822,8 +822,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 33d152ffaceecf94f9398e2a6c6642b8, type: 3}
   - {fileID: 8300000, guid: 6c37e313baa541f4988853d7dd44f8d7, type: 3}
   _music: {fileID: 1475527023}
-  _musicVolumeDeafult: 0.234
-  _soundVolumeDeafult: 0.6
+  _musicVolumeDeafult: 0.109
+  _soundVolumeDeafult: 0.269
 --- !u!4 &1475527025
 Transform:
   m_ObjectHideFlags: 0
